@@ -1,0 +1,206 @@
+ 
+
+  @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    body { margin: 0;} 
+    div#slider { overflow: hidden;   clip-path: polygon(0,0,100% 0,100% 100%,70% 80%,0 100%); margin-top: 0px !important;}
+    div#slider figure img { width: 20%; height: 500px; float: left;margin-top:20px; }
+    div#slider figure { 
+      margin-top: 0;
+      top: 0%;
+      position: relative;
+      width: 550%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s slidy infinite; 
+      
+    }
+
+
+.card{
+ 
+    transition: .4s;
+    border: 1px solid wheat;
+}
+
+.card:hover{
+    transform: scale(1,1);
+    box-shadow: 1px 6px 5px black;
+}
+
+.footer_id{
+  margin-top: 20px;
+  background: rgb(27, 26, 26);
+  height: 280px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.libary_deatils{
+  position: relative;
+   width: 50%;
+   text-align: center;
+   text-decoration: aqua;
+}
+
+.Usefull{
+  width: 50%;
+   text-align: center;
+   text-decoration: aqua;
+}
+
+.title{
+  width: 100%;
+  height: 100px;
+  background-color: blanchedalmond;
+}
+
+.inner{
+  overflow: hidden;
+}
+
+.inner img{
+  transition: all 1.5s ease;
+}
+
+.inner:hover img{
+  transform: scale(1.5);
+}
+
+.Mysection{
+  width: 100%;
+}
+
+/* side navigation */
+
+.sidebar{
+
+  z-index:2000;
+   position: fixed;
+   width: 250px;
+   left: -250px;
+   height: 100%;
+   background-color: #484848;
+ transition: all 5.s ease;
+ }
+ 
+ .sidebar header{
+   font-size: 18px;
+   text-align: center;
+   color: white;
+   line-height: 70px;
+   background-color: 	0000CD;
+   user-select: none;
+ }
+
+ .sidebar ul{
+  list-style:none;
+ }
+ .sidebar ul a{
+  left: 0;
+ font-size: 15px;
+ color: white;
+ height: 100%;
+ width: 100%;
+ line-height: 65px;
+ display: block;
+ padding-left: 8px;
+ box-sizing: border-box;
+ border-top: 1px solid rgba(255, 255, 255, .1);
+ border-bottom: 1px solid black;
+ text-decoration: none;
+ list-style: none;
+ transform: .4s;
+ }
+ .sidebar ul li i{
+ padding: 4px;
+ 
+ text-decoration: none;
+ }
+
+ .sidebar ul li:hover a{
+   padding-left: 12px;
+   text-decoration: none;
+ }
+
+ #check{
+   display: none;
+ }
+
+ label #btn,label #cancle{
+ position: absolute;
+ cursor: pointer;
+ background: #080808;
+ border-radius: 2px;
+ padding: 6px 12px;
+ }
+ 
+ label #btn{
+ z-index:2000;
+ left: 40px;
+ top: 8px;
+ font-size: 30px;
+ color: white;
+ transition: all 5s;
+ }
+ label #cancle{
+ 
+  left: -200px;
+  top: 8px;
+  font-size: 30px;
+  color: LightYellow;
+  transition: all .5s ease;
+ }
+ #check:checked~.sidebar{
+  left: 0;
+ }
+ #check:checked~ #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+ }
+ 
+ #check:checked~ label #cancle{
+ left: 200px;
+ z-index:2100;
+ top: 5px;
+ }
+ 
+ #check:checked~ #navbar_id{
+ left: 250px;
+ }
+ 
+/* side end navigation */
+
+
+ul li{
+  font-size: 20px;
+  margin-left: 20px;
+  border: 1px solid Black;
+  width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 22px;
+}
+
+ul li a:hover {
+  background-color: #6A5ACD;
+  border-radius: 5px;
+display: block;
+
+}
+
+ 
